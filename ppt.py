@@ -6,7 +6,8 @@ def menu():
 def opcoes():
     print('1. JOGAR')
     print('2. REGRAS')
-    print('3. SAIR')
+    print('3. SOBRE O AUTOR')
+    print('4. SAIR')
 
 def jogar():
     opcoes = {'1': 'pedra','2': 'papel','3': 'tesoura'} #dicionario: atribui valor(1) a uma chave (pedra)
@@ -53,6 +54,13 @@ def regras():
     print("Digite sua escolha como: pedra, papel ou tesoura")
     print("Boa sorte!\n")
     voltar_menu()
+
+
+def autor():
+    print('Jogo feito por: João Gabriel Guedes Vianna')
+    print('Aluno da PUC-SP cursando Ciência da Computação')
+    print('Atualmente no terceiro semestre')
+    voltar_menu()
     
 def escolher_opcao():
     opcao = input('Escolha uma opção: ')
@@ -61,6 +69,8 @@ def escolher_opcao():
     elif opcao == '2':
         return regras()
     elif opcao == '3':
+        return autor()
+    elif opcao == '4':
         return sair()
     else:
         print('OPÇÃO INVÁLIDA!')
